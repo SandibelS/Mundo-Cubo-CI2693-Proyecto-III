@@ -39,10 +39,6 @@ class AlfonsoJose {
             nextIndex++;
         }
 
-        // Ok, esto es una forma super ineficiente de conectar los vertices
-        // El problema es que la lista de sucesores de un nodo tiene apuntadores
-        // a los nodos de forma que se pueda usar esto al momento de calcular 
-        // las componentes fuertemente conexas. 
         for (node<Triple<Integer>> v1 : graph) {
             int v1i = v1.value.val1;
             int v1j = v1.value.val2;
